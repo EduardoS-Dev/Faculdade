@@ -1,0 +1,344 @@
+/* Import font from google */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: rgba(128, 128, 128, 0.499);
+   font-family: sans-serif;
+   margin: 0 auto;
+}
+
+/* PAGINA INDEX */
+
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Open Sans', sans-serif;
+}
+
+#topo, #menu,.destaques, section{
+   width: 100%;
+   margin: auto;
+}
+
+#topo h1{
+   font-size: 2em;
+   padding: 10px;
+}
+
+#topo h2{
+   font-size: 18px;
+   padding: 15px
+}
+
+.navbar img {
+   position: relative;
+   width: 35px;
+   height: 35px;
+   float: right;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.nav:hover #menu {
+   display: block;
+}
+
+#menu {
+   display: none;
+   position: absolute;
+   text-align: center;
+   background-color: rgba(51, 51, 51, 0.971);
+   min-width: 300px;
+   height: auto;
+   z-index: 0;
+}
+
+#menu li {
+   display: block;
+   padding: 20px;
+   letter-spacing: 2px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 16px;
+}
+
+#menu a {
+   text-decoration: none;
+   color: white;
+   display: block;
+}
+
+#menu li:hover {
+   background: rgba(0, 0, 255, 0.286);
+}
+
+.destaques h2{
+   font-size: 1.5em;
+   margin: 30px;
+   display: inline;
+}
+
+.destaques li{
+   width: 100%;
+   margin: auto;
+   float: left;
+   text-align: center;
+   list-style: none;
+   padding: 20px 0;
+}
+
+.destaques li img {
+   width: 300px;
+   height: 400px;
+   padding: 15px;
+   margin: auto;
+   object-fit: cover;
+}
+
+.destaques li strong{
+   width: 100%;
+   display: block;
+   font-size: 18px;
+}
+
+.destaques li a {
+   text-decoration: none;
+}
+
+.center{
+   text-align: center;
+}
+
+/* PAGINA PRODUTOS */
+
+table, tr, td{
+   border: 1px solid #000;
+}
+
+table{
+   background-color: #ddd;
+}
+
+.produtos table {
+   text-align: center; 
+   font-size: 13px; 
+   margin: 0 auto;
+}
+
+/*  PAGINA SOBRE */
+
+.sobre {
+   text-align: center;
+}
+
+.sobre h1 { 
+   padding: 15px 10px;
+   border-top: 1px solid;
+}
+
+.sobre p, li {
+   margin: 10px 20px;
+   list-style: none;
+}
+
+/* PAGINA CONTATO */
+
+form fieldset{
+   border: none;
+}
+
+form legend{
+   text-transform: uppercase;
+   font-size: 1.2em;
+   padding: 0;
+   width: 100%;
+   border-bottom: 1px solid #555;
+}
+
+form label, form input:not([type=checkbox]), form select, form textarea{
+   width: 100%;
+}
+
+form div{
+   width: 98%;
+   margin: 0 1%;
+   height: 180px;
+   float: left;
+}
+
+button{
+   padding: 10px 20px;
+   background-color: blue;
+   color: #fff;
+   border: none;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+#rodape{
+   width: 100%;
+   background-color: #333;
+   color: #ccc;
+   float: left;
+   text-align: center;
+   margin-top: 20px;
+}
+
+#rodape ul {
+   display: none;
+}
+
+#rodape p { 
+   font-size: 14px;
+}
+
+#rodape li {
+   display: inline;
+}
+
+@media (min-width: 576px) {
+   #topo h1{
+      font-size: 3em;
+      padding: 10px;
+   }
+
+   #topo h1{
+      animation:introducao 2s linear infinite alternate;
+      -webkit-animation:introducao 2s linear infinite alternate;
+      -moz-animation:introducao 2s linear infinite alternate;
+   }
+   
+   @-webkit-keyframes introducao{
+      0%{color: red; -webkit-transform: none;}
+      25%{color: blue; -webkit-transform:none;}
+      50%{color: green; -webkit-transform:none;}
+      75%{color: purple; -webkit-transform:none;}
+      100%{color: red; -webkit-transform:none;}
+   }
+
+   #topo h2{
+      font-size: 28px;
+      padding: 15px;
+   }
+
+   .destaques li{
+      max-width: 48%;
+      margin: auto;  
+   }
+
+   .destaques img {
+      max-width: 100%;
+   }
+
+   .produtos table {
+      text-align: center; 
+      font-size: 18px; 
+      margin: 0 auto;
+   }
+
+   #rodape p { 
+      font-size: 20px;
+   }
+
+}
+
+@media (min-width:992px) {
+   *{
+      overflow-x: hidden;
+   }
+
+   #topo h1{
+      animation:introducao 2s linear infinite alternate;
+      -webkit-animation:introducao 2s linear infinite alternate;
+      -moz-animation:introducao 2s linear infinite alternate;
+      margin: 25px;
+   }
+   
+   @-webkit-keyframes introducao{
+      0%{color: red; -webkit-transform:rotate(0deg);}
+      25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+      50%{color: green; -webkit-transform:rotate(0deg);}
+      75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+      100%{color: red; -webkit-transform:rotate(0deg);}
+   }
+   
+   @keyframes introducao{
+      0%{color: red; -webkit-transform:rotate(0deg);}
+      25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+      50%{color: green; -webkit-transform:rotate(0deg);}
+      75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+      100%{color: red; -webkit-transform:rotate(0deg);}
+   }
+
+   .navbar img {
+      display: none;
+   }
+
+   #menu {
+      display: block;  
+   }
+
+   #menu ul {
+      display: flex;
+      justify-content: center;
+   }
+
+   #menu li { 
+      float: left;
+      padding: 0px 20px;
+   }
+
+   .destaques h2 {
+      display: block;
+      margin: 50px 10px 10px;
+      text-align: center;
+      font-size: 32px;
+   }
+
+   .destaques li{
+      width: 24%;
+      float: left;
+   }
+
+   .produtos table {
+      text-align: center; 
+      font-size: 18px; 
+      margin: 60px auto 20px;
+      width: 90%;
+   }
+
+   .sobre {
+      margin-top: 30px;
+   }
+
+   form div{
+      width: 48%;
+   }
+
+   fieldset {
+      margin-top: 50px;
+   }
+   
+   #rodape ul {
+      display: block;
+      padding: 10px;
+   }
+
+   #rodape a {
+      font-family: 'Courier New', Courier, monospace;
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+   }
+
+   #rodape a:hover {
+      background: rgba(0, 0, 255, 0.286);
+      
+   }
+}

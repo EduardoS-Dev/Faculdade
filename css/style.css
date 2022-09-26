@@ -1,0 +1,202 @@
+/* Import font from google */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: rgba(128, 128, 128, 0.499);
+   font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Open Sans', sans-serif;
+}
+
+#topo, #menu,.destaques, section{
+   width: 100%;
+   margin: auto;
+}
+
+#topo h1{
+   font-size: 4.5em;
+   padding: 10px;
+}
+
+#topo h2{
+   font-size: 35px;
+   padding: 15px
+}
+
+#menu {
+   display: none;
+   position: relative;
+   text-align: center;
+   background-color: rgba(51, 51, 51, 0.788);
+   min-width: 200px;
+   height: auto;
+   z-index: 0;
+}
+
+#menu li {
+   display: block;
+   padding: 10px;
+   letter-spacing: 2px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 50px;
+
+}
+
+#menu a {
+   text-decoration: none;
+   color: white;
+   display: block;
+}
+
+.navbar img {
+   position: relative;
+   width: 90px;
+   height: 90px;
+   float: right;
+   margin-right: 40px;
+   cursor: pointer;
+}
+
+.destaques h2{
+   font-size: 4em;
+   margin: 30px;
+   display: inline;
+}
+
+
+
+/*#topo h1{
+   animation:introducao 2s linear infinite alternate;
+   -webkit-animation:introducao 2s linear infinite alternate;
+   -moz-animation:introducao 2s linear infinite alternate;
+}
+
+@-webkit-keyframes introducao{
+   0%{color: red; -webkit-transform:rotate(0deg);}
+   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+   50%{color: green; -webkit-transform:rotate(0deg);}
+   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+   100%{color: red; -webkit-transform:rotate(0deg);}
+}
+
+@keyframes introducao{
+   0%{color: red; -webkit-transform:rotate(0deg);}
+   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+   50%{color: green; -webkit-transform:rotate(0deg);}
+   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+   100%{color: red; -webkit-transform:rotate(0deg);}
+}
+
+#menu li{
+   display:inline;
+}*/
+
+.destaques li{
+   width: 100%;
+   margin: auto;
+   float: left;
+   text-align: center;
+   list-style: none;
+   padding: 20px 0;
+}
+
+.destaques li img {
+   width: 500px;
+   height: 650px;
+   padding: 15px;
+   margin: auto;
+}
+
+/*.destaques li:hover{
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition:all 500ms linear;
+   -moz-transition:all 500ms linear;
+   transition:all 500ms linear;
+}*/
+
+.destaques li strong{
+   width: 100%;
+   display: block;
+   font-size: 40px;
+}
+
+.destaques li a {
+   text-decoration: none;
+}
+
+.center{
+   text-align: center;
+}
+
+table, tr, td{
+   border: 1px solid #000;
+}
+
+table{
+   background-color: #ddd;
+}
+
+form fieldset{
+   border: none;
+}
+
+form legend{
+   text-transform: uppercase;
+   font-size: 1.2em;
+   padding: 0;
+   width: 100%;
+   border-bottom: 1px solid #555;
+}
+
+form label, form input:not([type=checkbox]), form select, form textarea{
+   width: 100%;
+}
+
+form div{
+   width: 48%;
+   margin: 0 1%;
+   height: 180px;
+   float: left;
+}
+
+button{
+   padding: 10px 20px;
+   background-color: blue;
+   color: #fff;
+   border: none;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+#rodape{
+   width: 100%;
+   background-color: #333;
+   color: #ccc;
+   float: left;
+   text-align: center;
+   margin-top: 20px;
+}
+
+#rodape ul {
+   display: none;
+}
+
+#rodape p { 
+   font-size: 40px;
+}
+
+#rodape li {display: inline;
+}
+
+
